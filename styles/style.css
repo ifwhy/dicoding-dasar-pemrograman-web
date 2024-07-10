@@ -1,0 +1,442 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    height: max-content;
+    font-family: 'Playpen sans', sans-serif;
+    /* background-color: #79DAE8; */
+}
+
+header {
+    background-color: #f2f5fa;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: max-content;
+    width: 100%;
+    position:sticky;
+    top: 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+header img {
+    /* height: 70px; */
+    min-height: 10px;
+    width: 22.5%;
+}
+
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+    /* background-color: antiquewhite; */
+    height: max-content;
+}
+
+header nav ul li {
+    list-style-type: none;
+    padding: 3px;
+    cursor: pointer;
+}
+
+header nav ul li .kasi-border:hover {
+    border-bottom: 2px solid black;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Playpen sans', sans-serif;
+}
+
+header nav ul #daftar-kelas {
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 30px;
+    border: 2px solid black;
+}
+
+header nav ul #daftar-kelas:hover {
+    background-color: #0AA1DD;
+    border: 2px solid #0AA1DD !important;
+    color: white;
+}
+
+main .home {
+    background-color: #f2f5fa;
+    display: flex;
+    flex-direction: column;
+}
+
+main .home #utama{
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+main .home .beranda {
+    text-align: left;
+    font-size: 20px;
+    width: 800px;
+    min-width: 240px;
+    font-family: 'Playpen sans';
+    padding: 5px;
+}
+
+main .home .beranda h2 {
+    font-weight: 450;
+}
+
+main .home .beranda button {
+    border-radius: 50px;
+    padding: 20px;
+    background-color: #0AA1DD;
+    color: white;
+    border: 2px solid #0AA1DD;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Playpen sans';
+    cursor: pointer;
+}
+
+main .home .beranda button:hover {
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+}
+
+main .home #buku {
+    width: 650px;
+    min-width: 300px;
+}
+
+main .home #blm-pernah-diliput {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+main .home #blm-pernah-diliput h3 {
+    padding-left: 10px;
+    border-left: 3px solid black;
+    font-family: 'Playpen sans', sans-serif;
+}
+
+main #unggul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Playpen sans', sans-serif;
+}
+
+main #unggul h2 {
+    font-size: 25px;
+}
+
+main #unggul #unggul-keunggulan {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+    height: max-content;
+}
+
+main #unggul .keunggulan {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* flex-direction: column; */
+    width: 20%;
+    min-width: 240px;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+main #unggul .keunggulan:hover {
+    margin-bottom: 40px;
+    margin-top: 0;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px 0 #0AA1DD;
+}
+
+main #unggul .keunggulan h4 {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+main #unggul .keunggulan p {
+    margin-top: 0;
+    text-align: justify;
+}
+
+
+main #unggul .keunggulan img {
+    height: 230px;
+    min-height: 100px;
+}
+
+.svg {
+    position: relative;
+    bottom: -25px;
+    margin: 0;
+}
+
+main #metode-belajar {
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f5fa;
+    padding: 30px;
+    text-align: center;
+}
+
+main #metode-belajar .metode-belajar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 30px;
+    flex-direction: row;
+    margin: 10px;
+}
+
+main #metode-belajar .metode-belajar .metode {
+    width: 600px;
+    min-width: 240px;
+    color: white;
+    background-color: #0AA1DD;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: justify;
+    border: 2px solid #0AA1DD;
+}
+
+main #metode-belajar .metode-belajar .metode:hover {
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.8);
+    transition: all 0.3s ease-in-out;
+}
+
+main #metode-belajar .metode-belajar .metode h3 {
+    text-align: center;
+}
+
+main #galeri {
+    width: 75%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main #galeri h3 {
+    font-size: 24px;
+}
+
+main #galeri .jumbo {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+
+main #galeri .thumbnail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+main #galeri .thumb {
+    width: 20%;
+    cursor: pointer;
+    border-radius: 15px;
+    line-height: 100%;
+}
+
+main #galeri .thumb:hover {
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 0 3px 3px #0AA1DD;
+    width: 21.5%;
+    height: 21.5%;
+}
+
+.blue-shadow {
+    box-shadow: 0 0 3px 3px #0AA1DD;
+}
+
+.fade {
+    opacity: 0;
+    animation: fadeIn forwards 0.75s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.svg-1 {
+    position: relative;
+    bottom: -200px;
+    z-index: -1;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 100px;
+    background-color: #f2f5fa;
+}
+
+aside h2 {
+    font-size: 24px;
+}
+
+aside #pengajar-kami {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+    height: max-content;
+}
+
+aside #pengajar-kami .pengajar {
+    width: 17.5%;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    min-width: 240px;
+    border-radius: 20px;
+    background-color: white;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+aside #pengajar-kami .pengajar img {
+    width: 70%;
+    min-width: 240px;
+    border-radius: 50%;
+    border: 5px solid #0AA1DD;
+}
+
+aside #pengajar-kami .pengajar h4 {
+    font-size: 19px;
+}
+
+aside #pengajar-kami .pengajar p {
+    text-align: justify;
+    font-size: 16px;
+}
+
+aside #pengajar-kami .pengajar:hover {
+    box-shadow: 0 4px 8px 0 #0AA1DD;
+    margin-bottom: 40px;
+    margin-top: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+footer {
+    padding:30px;
+    background-color: #0AA1DD;
+    color: white;
+}
+
+footer .akhir {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+
+    gap: 150px;
+    padding-bottom: 50px;
+}
+
+footer .akhir .footer {
+    text-align: left;
+    width: 400px;
+    min-width: 240px;
+    height: max-content;
+}
+
+footer .akhir #ikuti-medsos {
+    text-align: center;
+}
+
+footer .akhir .footer p {
+    text-align: justify;
+}
+
+footer .akhir #tentang-kami button {
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid #0AA1DD;
+    cursor: pointer;
+    font-family: 'Playpen sans', sans-serif;
+}
+
+footer .akhir #tentang-kami button:hover {
+    border: 2px solid white;
+    background-color: #0AA1DD;
+    color: white;
+}
+
+footer #creator {
+    text-align: center;
+}
+
+footer #hubungi-kami table {
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+}
+
+footer #hubungi-kami table tr td a {
+    text-decoration: none;
+    color: white;
+}
+
+footer #hubungi-kami table tr td a img {
+    width: 30px;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+@media screen and (max-width:1024px){
+    header {
+        justify-content: center;
+    }
+    header nav ul {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:727px) {
+    header img {
+        height: 50px;
+        width: auto;
+    }
+}
